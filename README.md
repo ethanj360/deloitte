@@ -3,11 +3,14 @@
 
 ## TLDR
 
+**Project Context**  
+Completed through Deloitte Australia’s Data Analytics Virtual Program on Forage, simulating client-facing analytics work.
+
 **Business Goal**  
 Identify the biggest sources of assembly-line interruption across global factories and classify gender pay equity by job role and location to support fairer compensation review.
 
-**Who This Is For**  
-Operations leaders, plant managers, forensic technology teams, HR analysts, and business stakeholders who need clear operational and pay equity insights.
+**Primary Stakeholders**  
+Daikibo operations leaders reviewing factory downtime, along with internal HR and forensic technology stakeholders reviewing compensation fairness.
 
 **What I Built**
 - A Tableau dashboard analyzing industrial IoT telemetry data from 4 factories and 9 machine types
@@ -16,7 +19,7 @@ Operations leaders, plant managers, forensic technology teams, HR analysts, and 
 - An Excel-based equality classification analysis labeling roles as Fair, Unfair, or Highly Discriminative
 
 **Key Deliverables**
-- Defined business questions and stakeholder objectives
+- Defined the business questions and stakeholder objectives
 - Analyzed machine telemetry data to identify downtime concentration
 - Built Tableau bar charts and dashboard filter interactions
 - Created an equality classification field in Excel using rule-based thresholds
@@ -43,7 +46,7 @@ Operations leaders, plant managers, forensic technology teams, HR analysts, and 
 - Factory downtime was concentrated unevenly across locations, making it easier to isolate where assembly-line interruptions were most severe
 - Tableau filtering made it possible to connect the highest-downtime factory to the device types driving those interruptions
 - The Excel classification framework translated raw equality scores into business-friendly categories for review
-- The project showed how simple rule-based analysis can support both operational diagnostics and pay equity monitoring
+- The project showed how straightforward rule-based analysis can support both operational diagnostics and pay equity monitoring
 
 **Tools Used**
 
@@ -52,7 +55,7 @@ Operations leaders, plant managers, forensic technology teams, HR analysts, and 
 
 **Why It Matters**
 
-This project shows how analytics can support two very different business problems: operational performance and compensation fairness. It demonstrates dashboarding, classification logic, and stakeholder-friendly analysis in a concise consulting-style case study.
+This project shows how analytics can support two very different business problems: operational performance and compensation fairness. It highlights dashboarding, classification logic, and stakeholder-focused analysis in a concise consulting-style case study.
 
 ---
 
@@ -62,11 +65,11 @@ This project was completed through Deloitte Australia’s Data Analytics Virtual
 
 The project had two separate tasks.
 
-In the first task, I analyzed machine telemetry data from Daikibo’s factories to identify where assembly-line downtime was happening most often and which machine types were driving those interruptions. I used Tableau to build an interactive dashboard that let the user filter downtime by factory and examine the device types contributing to operational issues.
+In the first task, I analyzed machine telemetry data from Daikibo’s factories to identify where assembly-line downtime was happening most often and which machine types were driving those interruptions. I used Tableau to build an interactive dashboard that allowed users to filter downtime by factory and examine the device types contributing to operational issues.
 
-In the second task, I worked with compensation data to help classify job roles based on an equality score. Using Excel, I assigned each role to a category of Fair, Unfair, or Highly Discriminative so stakeholders could review pay equity concerns in a more structured way.
+In the second task, I worked with compensation data to classify job roles based on an equality score. Using Excel, I assigned each role to a category of Fair, Unfair, or Highly Discriminative so stakeholders could review pay equity concerns in a more structured way.
 
-Together, the project highlights how analytics can be applied to both operations and people-related business problems.
+Together, the project shows how analytics can be used across both operations and people-related business problems.
 
 ---
 
@@ -76,24 +79,21 @@ Together, the project highlights how analytics can be applied to both operations
 
 **Task 2: Which roles should be flagged as Fair, Unfair, or Highly Discriminative based on their gender pay equality score?**
 
-These questions reflect two common consulting-style analytics needs:
+These tasks reflect two common consulting-style analytics needs:
 
 - Turning raw operational telemetry into a clear root-cause dashboard
-- Turning raw scoring outputs into actionable business classifications
+- Turning raw scoring outputs into practical business classifications
 
 ---
 
-## Client Context
-
-**Client Type**  
-Industrial manufacturing and operations stakeholder for telemetry analysis, plus internal HR and forensic technology stakeholders for pay equity review.
+## Business Context
 
 **Business Objective**  
 Support better operational decision-making by identifying downtime concentration, while also supporting a more equitable compensation review process through role-level classification.
 
 ---
 
-## Project Task Structure
+## Project Structure
 
 ### Task 1: Factory Downtime Analysis in Tableau
 
@@ -118,10 +118,10 @@ Main work completed:
 
 - Reviewed factory, job role, and equality score data
 - Created an **Equality Class** column
-- Classified each record into:
-  - **Fair**
-  - **Unfair**
-  - **Highly Discriminative**
+- Classified each record into one of three categories:
+  - **Fair** for scores between -10 and 10
+  - **Unfair** for scores below -10 or above 10
+  - **Highly Discriminative** for scores below -20 or above 20
 - Applied rule-based thresholds to make the classification consistent and easy to review
 
 This helped convert raw scores into a format that stakeholders could interpret more quickly.
@@ -150,7 +150,7 @@ The machine dataset included nine device types and machine status readings at 10
 
 ### Task 1: Tableau Dashboarding
 
-To measure downtime, I created an **Unhealthy** calculated field with a value of 10 for each unhealthy status. This represented 10 minutes of potential downtime since the prior message.
+To measure downtime, I created an **Unhealthy** calculated field with a value of 10 for each unhealthy status. This represented 10 minutes of potential downtime since the previous message.
 
 From there, I built:
 
@@ -158,13 +158,13 @@ From there, I built:
 - A device-type downtime comparison
 - A dashboard with interactive filtering
 
-This made it easy to move from a high-level operational view to a more detailed root-cause view.
+This made it easier to move from a high-level operational view to a more detailed root-cause view.
 
 ### Task 2: Excel Classification Logic
 
 For the equality analysis, I translated the numeric score into business-friendly categories so the output could be reviewed more efficiently.
 
-The logic grouped rows into:
+The classification logic grouped rows into:
 
 - **Fair**
 - **Unfair**
@@ -251,7 +251,7 @@ Open the completed task 2 deliverables.
 - Simple calculated measures can make machine-status data more interpretable
 - Interactive filtering improves drill-down analysis and stakeholder usability
 - Excel classification logic can translate raw scoring into clearer decision categories
-- Even small analytics tasks can support meaningful decisions in operations and HR contexts
+- Even smaller analytics tasks can support meaningful decisions in operations and HR contexts
 
 ---
 
@@ -259,15 +259,7 @@ Open the completed task 2 deliverables.
 
 Consulting and analytics work often involves translating raw technical outputs into something stakeholders can understand and act on quickly.
 
-This project matters because it combines:
-
-- Dashboarding
-- Operational analysis
-- Classification logic
-- Business interpretation
-- Stakeholder communication
-
-That makes it a strong example of practical analytics in a client-style setting.
+This project brings together operational analysis, dashboarding, classification logic, and business interpretation in a compact client-style case study. It is a good example of how analytics can make technical information more usable for decision-makers.
 
 ---
 
@@ -279,4 +271,4 @@ This project strengthened my ability to:
 - Create calculated fields that turn raw status signals into measurable business metrics  
 - Use filtering to improve dashboard interactivity and analysis flow  
 - Build structured Excel classifications from numeric scoring logic  
-- Translate technical outputs into business-friendly findings for clients  
+- Translate technical outputs into business-friendly findings for stakeholders  
